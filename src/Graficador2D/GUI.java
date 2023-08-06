@@ -1,41 +1,30 @@
 package Graficador2D;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JScrollPane;
-import javax.swing.ListModel;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.DefaultListModel;
-import javax.swing.JButton;
-import java.awt.Font;
-import javax.swing.border.LineBorder;
 import java.awt.Color;
-import javax.swing.JCheckBox;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JMenu;
-import javax.swing.JCheckBoxMenuItem;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.SwingConstants;
 import java.awt.Component;
 import java.awt.ComponentOrientation;
-import java.awt.Rectangle;
-import javax.swing.JList;
-import javax.swing.ListSelectionModel;
-import javax.swing.JScrollBar;
-import javax.swing.event.ListSelectionListener;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import Animacion.AnimacionNull;
-
-import javax.swing.event.ListSelectionEvent;
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import javax.swing.JCheckBoxMenuItem;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
+import javax.swing.ListSelectionModel;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingConstants;
+import javax.swing.border.EmptyBorder;
 
 
 public class GUI extends JFrame
@@ -221,7 +210,7 @@ public class GUI extends JFrame
 		mchkGrillaE.doClick();
 		mnVista.add(mchkGrillaE);
 		
-		JCheckBoxMenuItem mchkGrillaNumeros = new JCheckBoxMenuItem("Grilla Números");
+		JCheckBoxMenuItem mchkGrillaNumeros = new JCheckBoxMenuItem("Grilla Nï¿½meros");
 		mchkGrillaNumeros.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
