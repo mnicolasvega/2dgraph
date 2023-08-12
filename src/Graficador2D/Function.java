@@ -2,15 +2,16 @@ package Graficador2D;
 
 import java.awt.Graphics2D;
 
-import net.objecthunter.exp4j.Expression;
-import net.objecthunter.exp4j.ExpressionBuilder;
+//TODO: readd dependency
+//import net.objecthunter.exp4j.Expression;
+//import net.objecthunter.exp4j.ExpressionBuilder;
 
 
 public class Function
 {
 	private String	expresion,
 					name;
-	private Expression f;
+	//private Expression f;
 	
 	
 	public Function( String name, String f )
@@ -18,16 +19,17 @@ public class Function
 		this.name		= name;
 		this.expresion	= f;
 		
-		ExpressionBuilder EB = new ExpressionBuilder( f );
-		EB.variable( "x" );
-		this.f = EB.build();
+		//ExpressionBuilder EB = new ExpressionBuilder( f );
+		//EB.variable( "x" );
+		//this.f = EB.build();
 	}
 	
 	
 	public double calcular( double x )
 	{
-		f.setVariable("x", x);
-		return f.evaluate();
+		//f.setVariable("x", x);
+		//return f.evaluate();
+		return 0.1 * (x + 2.5) * (x + 1) * x * (x - 1.5) * (x - 2);
 	}
 	
 	
